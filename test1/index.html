@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hệ thống quản lý nhân sự của công ty phúc an bình</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="css/font.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper" style="background-color: #FFFFFF !important">
+
+        <!-- Navigation -->
+
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="height: 100px; width: 100%; border-color: #FFFFFF; background-color: #FFFFFF;  ">
+            <div class="navbar-header" style=" height: 100%; ">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                <a class="navbar-brand" style="height: 100%; " href="" ><img src="img/logo.PNG" class="img-responsive" alt="Image"> </a>
+                <a class="navbar-brand" style="height: 100%; " href="" > Welcome,<br> <p style="color: orange; font-weight: bold;"> Administrator </p> </a>
+            </div>
+
+           
+         
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right" style="    background-color: unset;  ">                 
+                <li class="dropdown" style="background-color: unset;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="background-color: unset;" href="#"> <img  src="img/logo.PNG" class="img-responsive" style="width: 12%; float: left;" alt="Image">
+                        <b> Administrator </b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            </nav>
+            <nav>
+
+            <!-- /.navbar-top-links -->
+        <nav style="border-right: 2px solid #FFFFFF">
+
+            <div class="navbar-default sidebar" role="navigation" style="margin-top: 32px;">
+                <div class="sidebar-nav navbar-collapse" style="">
+                        
+                    <ul class="nav" id="side-menu" style="border: dotted; border-color: orange; margin: 60px 5px;">
+
+                         <li>
+                            <a href=""><i class="fa fa-tasks"></i>  Các khóa học của tôi<span class="fa arrow"></span></a>
+
+                            <ul class="nav nav-second-level">
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-book"></i> Khóa học Yoga cho người mới bắt đầu </span></a>
+                            </li>
+                                 <li>
+                                <a href="themnhansu.html"><i class="fa fa-book"></i> Khóa học cho thanh niên </span></a>
+                            </li>
+                              </li>
+                                 <li>
+                                <a href="themnhansu.html"><i class="fa fa-book"></i> Khóa học cho người trung niên  </span></a>
+                            </li>
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-book"></i> Khóa học cho người gìa </span></a>
+                            </li>
+                            </ul>
+
+                        </li>
+                          <li>
+                            <a href=""><i class="fa fa-info"></i>  Thông tin tài khoản <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-thumb-tack"></i> Chi tiết tài khoản </span></a>
+                            </li>
+                                 <li>
+                                <a href="themnhansu.html"><i class="fa fa-pencil-square-o"></i>  Chỉnh sửa tài khoản</span></a>
+                            </li>
+                              </li>
+                                 <li>
+                                <a href="themnhansu.html"><i class="fa fa-undo"></i> Gia hạn tài khoản  </span></a>
+                            </li>
+                            </ul>
+
+                        </li>
+                          <li>
+                            <a href=""><i class="fa fa-list"></i>  Quản lý khóa học <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-plus"></i> Thêm thông tin khóa học  </span></a>
+                            </li>
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-pencil-square-o"></i>Chỉnh sửa khóa học </span></a>
+                            </li>
+
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-trash-o"></i> Xóa khóa học </span></a>
+                            </li>
+                            </ul>
+
+                        </li>
+                           </li>
+
+                            <li>
+                            <a href="" style=""><i class="fa fa-lock"></i>  Quản trị hệ thống <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-wrench"></i>   Cài đặt chung </span></a>
+                            </li>
+                                 <li>
+                                <a href="themnhansu.html"><i class="fa fa-user"></i> Quản lý thành viên </span></a>
+                            </li>
+
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-book"></i> Quản lý khóa học  </span></a>
+                            </li>
+
+                            <li>
+                                <a href="themnhansu.html"><i class="fa fa-undo"></i> Nhật ký gia hạn </span></a>
+                            </li>
+                            </ul>
+
+                        </li>
+                           </li>
+                         
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper" style="border-left: 2px solid #FFFFFF">
+            <div class="container-fluid">
+                <div class="row">
+                   <div class="col-md-12" style="margin-top: 30px">
+                    <div class="block">
+                        <div class="col-md-4" style="">
+                            <div class="col-md-12" style="width: 100%">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                            <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+                        
+                         <div class="col-md-4" style="">
+                            <div class="col-md-12">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                             <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+
+                         <div class="col-md-4" style="">
+                            <div class="col-md-12">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                             <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+
+                        </div>
+                        <!-- end block -->
+
+                        <!-- 1 block (3 bài hàng ngang) -->
+
+                        <div class="block">
+                        <div class="col-md-4" style="">
+                            <div class="col-md-12">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                             <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="">
+                            <div class="col-md-12">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                             <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="">
+                            <div class="col-md-12">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                             <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- end block -->
+
+
+                        <!-- 1 block (3 bài hàng ngang) -->
+
+                        <div class="block">
+
+                        <div class="col-md-4" style="">
+                            <div class="col-md-12">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                             <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="">
+                            <div class="col-md-12">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                             <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" style="">
+                            <div class="col-md-12">
+                                <img src="img/img1.PNG" class="img-responsive" alt="Image" style="width: 100%;">
+                            </div>
+                             <div class="col-md-12">
+                                <p> <b> <a href="#" style="color: black"> Yoga trẻ hóa và làm đẹp cho khuôn mặt </a> </b> </p>
+                                <p> Giảng viên: Nguyễn Hiếu </p>
+                                <p style="font-size: 12px"> <i class="fa fa-book" aria-hidden="true"></i> Đã hoàn thành : 11/20 bài giảng </p>
+                                <p style="font-size: 12px;"> <i class="fa fa-clock-o" aria-hidden="true"></i> Lần học gần nhất : 19:49 29/12/2017
+ </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- 1 block (3 bài hàng ngang) -->
+                   </div>
+                    <!-- /.col-md-9 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <div class="footer" style="border-top: 5px solid black;  ">
+        <div class="col-md-12" style="border-top: 3px solid #E3864A; margin-top: 2px; background: #FFFFFF !important">
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-9">
+                <div class="col-md-2">
+                        <img src="img/img-f.PNG"  style="margin-top: 15px" class="img-responsive" alt="Image">
+                    </div> 
+                    <!-- end -logo left -->
+
+
+                    <!-- middle-footer -->
+                    <div class="col-md-7">
+                        <!-- sdt + mail -->
+                        <div class="col-md-12" style="margin-bottom: 20px">
+                            <div class="col-md-6" style="">
+                                <div class="col-md-12" style="width: 100%; overflow: hidden;">
+                                    
+                                    <img src="img/mail.PNG" class="img-responsive" style="width: 25%;float: left;" alt="Image">
+                                    <span style="width: 75%;float: left;"> <a href="" style="color: black"> cskh@edumail.com </a> </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6" style="">
+                                <div class="col-md-12" style="width: 100%;">
+                                    <img src="img/call.PNG" class="img-responsive" style="width: 23%;float: left;" alt="Image">
+                                    <span style="width: 75%;float: left;"> 1800.6816 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+
+
+                        <!-- fb + youtube -->
+                        <div class="col-md-12">
+                            <div class="col-md-4" style="">
+                                <div class="col-md-12" style="width: 100%; overflow: hidden;">
+                                    <span> <a href="#">
+                                    <img src="img/facebook-512.png"  class="img-responsive" style="width: 46%;margin-top: 4px;float: left; overflow: hidden;" alt="Image" >
+                                    <span style="width: 54%;float: left;"> <img src="img/YouTube-512.png" class="img-responsive" alt="Image">  </span>
+                                </a>
+                              </span>
+
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-8" style="">
+                                <div class="col-md-12" style="width: 100%;">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+
+                        <div class="col-md-12">
+                            <p style="padding-left: 5%;"> Edumall. All rights reserved 2016@ </p>
+                        </div>
+
+                        
+                    </div>
+                    <!-- end middle-footer -->
+                    <!-- footer-right-logo -->
+                    <div class="col-md-3">
+                        <img src="img/img-f.PNG" style="width: 350%; " class="img-responsive" alt="Image">
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/style.js"></script>
+
+</body>
+
+</html>
